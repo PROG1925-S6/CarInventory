@@ -18,6 +18,8 @@ namespace CarInventory
         public string year, make;
         public int mileage;
 
+        private int price;
+
         //Default Constructor - include in all classes
         public Car()
         {
@@ -33,6 +35,16 @@ namespace CarInventory
         public void Drive(int km)
         {
             mileage = mileage + km;
+        }
+
+        public void SetPrice(int newPrice)
+        {
+            price = newPrice;
+        }
+
+        public int GetPrice()
+        {
+            return price;
         }
     }
 }
